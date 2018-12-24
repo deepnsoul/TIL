@@ -44,12 +44,25 @@ Why visualize data?
 
 Because data is an abstract representation of some reality or some phenomena we are interested in. In general, people who are using visualization, come with some pre-existing knowledge and some goal related to better understanding some phenomena.
 
-![Image of VDpipeline](https://github.com/deepnsoul/TIL/blob/master/infovis/fig/VDpipeline.png)
+*[img1] Diagram of Data visualization Process* ![Image of VDpipeline](https://github.com/deepnsoul/TIL/blob/master/infovis/fig/VDpipeline.png)
 
 -	문제는 우리가 관심 있는 데이터가 추상적이라는 것이다. 시각화를 이용한다면 가지고 있는 지식과 질문을 통해 어떤 현상에 대해 더 나은 이해가 가능하다.
 
-### Two type of Visualization
+### Three main purposes of Visualization
 
--	Exploratory Visualization
+-	`Explanatory for communication`
 
--	Explanatory Visualization
+	-	to explain something to somebody else
+	-	their is someone who has some message or some idea that needs to be communicated visually through data visualization
+	-	[Example of Explanatory Visualization](https://www.nytimes.com/interactive/2017/03/21/climate/how-americans-think-about-climate-change-in-six-maps.html)
+
+-	`Exploratory for analyzing data`
+
+	-	to help person answer questions and generate new hypotheses  
+	-	there is a person who needs to extract information out of data and does not really know what the content of this data is
+	-	Examples of Exploratory Visualizations Tools: Tableau, R-ggplot2, Python-Matplotlib, Seabon
+
+-	`Comfirmatory for analyzing data`
+
+	-	to check whether hypothesis actually holds in the data
+	-	there is person who is using visualization here has some hypothesis or question in mind that needs to be checked out
