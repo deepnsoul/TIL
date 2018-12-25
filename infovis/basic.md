@@ -1,7 +1,7 @@
 Infomation Visualization Basic
 ==============================
 
-coursera **[Information Visualization: Foundations](https://www.coursera.org/learn/information-visualization-fundamentals/)** course fundamental concepts by New York University Tandon School of Engineering
+coursera **[Information Visualization: Foundations](https://www.coursera.org/learn/information-visualization-fundamentals/)** course fundamental concepts by **Enrico Bertini** at New York University Tandon School of Engineering
 
 What is Information Visualization?
 ----------------------------------
@@ -49,6 +49,8 @@ Because data is an abstract representation of some reality or some phenomena we 
 -	문제는 우리가 관심 있는 데이터가 추상적이라는 것이다. 시각화를 이용한다면 가지고 있는 지식과 질문을 통해 어떤 현상에 대해 더 나은 이해가 가능하다.
 
 ### Three main purposes of Visualization
+
+시각화의 주요 목적은 크게 세 가지로 구분할 수 있다. Explanatory는 아이디어를 전달하기 위한 `Commnunication` 의 목적을, Exploratory는 질문에 대한 답을 찾고 가설을 세우기 위한 `Analyzing` 의 목적을, 마지막으로 Comfirmatory는 실제 데이터 안에서 가설을 확인하기 위한 Exploratory와 비슷한 목적을 가지고 있다.
 
 -	`Explanatory for communication`
 
