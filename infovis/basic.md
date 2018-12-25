@@ -72,11 +72,29 @@ Because data is an abstract representation of some reality or some phenomena we 
 ### Why use a Graphical Representation
 
 1.	Humans are inherently visual animals, and we are very good at processing visual information.
+
 2.	There are three main ways to communicate information. The first one is `verbally`, the second one is `numerically`, and the third one is `graphically`. How does it differ?
-	-	When commnunication verbally we are forced to process this information sequentially.
-	-	When using table, problem is that there is not much to see and perceive.
+
+	-	When we commnunicate verbally, we are forced to process this information sequentially.
+	-	When we use table, problem is that there is not much to see and perceive.
 	-	Contrary to these ways, when observing a chart, we are actually consuming and processing this information in a parallel fashion, all at once. We do not need to go through it sequentially.
+
 3.	Problems with summary statistics
+
 	-	statistics are summaries of information that is contained in the data so that we can communicate the most important information.
 	-	The problem though with statistics is that they aggregate information and remove a lot of details.
-	-	Anscombe's Quartet is an image that consist of four plots with four diffent datasets[img2]()
+	-	Anscombe's Quartet is an image that consist of four plots with four diffent datasets ![imamge of anscombe's quartet](https://github.com/deepnsoul/TIL/blob/master/infovis/fig/anscombe.png)
+	-	As you can see, these four scatter plots have very different patterns. But when we calculate a number of common statistics on top of these four patterns, we realize that they have exactly the same average.
+	-	When we visualize data, we can readily perceive information that is hidden in the statistics.
+
+---
+
+-	첫 번째 이유는 인간은 본성적으로 시각적 동물이기 때문에 시각 정보 처리에 능숙하기 때문이다.
+
+-	다음으로 정보를 전달하는 방법은 verbally, numerically,graphically 세 가지가 있다. verbal 방식은 정보를 순차적으로 처리해야 한다는 문제가, table 방식은 보고 인식할 수 있는 정보가 많지 않다는 문제가 있다.
+
+-	이와 다르게, 차트와 같이 graphical 방식은 우리가 정보에 대해 처리와 인식을 동시에 병행하는 것을 가능하게 해준다.
+
+-	마지막으로 통계는 데이터에 대한 요약 정보를 담고 있는데, 이를 통해 우리는 가장 중요한 정보를 전달할 수 있다. 그러나 통계의 문제점은 통합된 정보만 보여주기 때문에 많은 세부 정보들이 제거된다는 점이다.
+
+-	데이터 시각화를 통해 우리는 통계 뒤에 숨겨진 정보를 잘 인식할 수 있다.
