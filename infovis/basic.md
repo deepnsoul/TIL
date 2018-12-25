@@ -132,7 +132,8 @@ Because data is an abstract representation of some reality or some phenomena we 
 -	그러므로, 사용자가 직접 시스템을 변경할 수 있는 인터렉티브한 환경은 다양한 질문에 대한 답변을 가능하게 한다.
 -	다양한 디바이스에서 어떻게 인터렉티브 환경을 구성할 것인가? 이 주제는 현재 인터렉티브 분야에서 활발하게 진행되고 있는 연구 중에 하나이다.  
 
-### Assessing the Quality of a Visualization
+Assessing the Quality of a Visualization
+----------------------------------------
 
 How do you know that one visualization is better than another? Is that not subjective? **Some visual representations are clearly better** because they are easier to interpret, and easier and faster, and more accurate to read.
 
