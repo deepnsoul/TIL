@@ -110,7 +110,7 @@ Because data is an abstract representation of some reality or some phenomena we 
 
 ### Why Use Computers to Visualize Data?
 
-1.	The first one is obviously that with a computer, we can visualize a lot of data
+1.	The first one is obviously that with a computer, we can visualize a lot of data.
 2.	The second reason is that computers allow you to interact with digital graphical representations.
 3.	But, there are still people who actually like drawing data with their hands. [Dear Data](http://www.dear-data.com/) by Giorgia Lupi and Stefanie Posavec is a beautiful example.
 
@@ -123,8 +123,8 @@ Because data is an abstract representation of some reality or some phenomena we 
 ### Why Use Interaction?
 
 -	Not all questions can be answered by looking at one single visual representation.
--	Therefore, having a system that can change as we interact with it and helps us answer multiple questions
--	An interesting area of research in visualization is how to do visualization with other devices and other interaction modes
+-	Therefore, having a system that can change as we interact with it and helps us answer multiple questions.
+-	An interesting area of research in visualization is how to do visualization with other devices and other interaction modes.
 
 ---
 
@@ -134,6 +134,37 @@ Because data is an abstract representation of some reality or some phenomena we 
 
 ### Assessing the Quality of a Visualization
 
-How do you know that one visualization is better than another? Is that not subjective?
+How do you know that one visualization is better than another? Is that not subjective? **Some visual representations are clearly better** because they are easier to interpret, and easier and faster, and more accurate to read.
 
-**Some visual representations are clearly better** because they are easier to interpret, and easier and faster, and more accurate to read.
+*[img2] The pie charts of a world of drugs* ![image of pie charts](https://github.com/deepnsoul/TIL/blob/master/infovis/fig/error.png)
+
+-	If your goal is to represent the trend over time and how they change and intersect, it is not a particularly good representation.
+-	We tend to perceive quantity with the area of the segments. But the quantity that the designer here wants to convey is actually represented with the angle of the pies.
+-	Another problem is that the angle and the size interfere. So it is very hard to disentangle these two pieces of information.
+-	One more problem is that if we want to see how proportions change over time, we have to mentally link these areas across the segments, which are also not aligned, which makes these comparison even harder.
+
+*[img3] The line charts of a world of drugs* ![image of pie charts](https://github.com/deepnsoul/TIL/blob/master/infovis/fig/correct.png)
+
+-	But if I represent exactly the same data with a line chart, observing trend over time and how they relate to each other, how these markets relate to each other, is much easier.
+-	So, when you are evaluating, assessing the quality of a visual representation, you have to think first of all, what is the intent, what problem am I try to solve, what information am I trying to convey.
+-	And then figure out whether one visual representation is bad at conveying this information than the other.
+
+```
+Designing effective visualizations requires two main steps.
+
+The first one is knowing the design space.
+The second skill is being able to compare the solutions in an effective way.
+
+```
+
+-	First, being able to create a certain number of alternatives is a crucial skills for visualization design.
+-	If you do not know how to do that, it will not be possible for you to actually see different solutions and start assessing them.
+-	In addition, You have to be able to predict whether a given visual representation is going to be more effective than another.
+-	And how do you do that? There are many ways, but the most important skill is how human perception of graphical representation works.
+
+---
+
+-	만약 파이차트를 그린 목적이 시간에 따른 변화를 보고자 한 것이었다면, 이 방식은 좋은 표현이 아니다.
+-	몇 가지 이유가 있는데, - 먼저 우리는 구분된 영역의 크기를 통해 그 양을 인지하는 경향이 있다. 그러나 여기서는 실제로 파이의 각도가 양을 의미한다.  
+-	다른 문제는 각도와 크기라는 서로 다른 종류의 정보가 이해를 방해하고 해석하기 어렵게 만든다는 것이다.
+-	마지막으로 시간에 따른 변화를 보기 위해서는 한 파이차트에서 구분된 영역을 다른 파이차트와 연결해서 봐야하는데, 서로 떨어져있기 때문에 비교가 어렵다는 것이다.
