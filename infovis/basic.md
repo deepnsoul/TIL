@@ -68,3 +68,15 @@ Because data is an abstract representation of some reality or some phenomena we 
 
 	-	to check whether hypothesis actually holds in the data
 	-	there is person who is using visualization here has some hypothesis or question in mind that needs to be checked out
+
+### Why use a Graphical Representation
+
+1.	Humans are inherently visual animals, and we are very good at processing visual information.
+2.	There are three main ways to communicate information. The first one is `verbally`, the second one is `numerically`, and the third one is `graphically`. How does it differ?
+	-	When commnunication verbally we are forced to process this information sequentially.
+	-	When using table, problem is that there is not much to see and perceive.
+	-	Contrary to these ways, when observing a chart, we are actually consuming and processing this information in a parallel fashion, all at once. We do not need to go through it sequentially.
+3.	Problems with summary statistics
+	-	statistics are summaries of information that is contained in the data so that we can communicate the most important information.
+	-	The problem though with statistics is that they aggregate information and remove a lot of details.
+	-	Anscombe's Quartet is an image that consist of four plots with four diffent datasets[img2]()
