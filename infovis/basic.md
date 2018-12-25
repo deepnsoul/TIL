@@ -17,7 +17,8 @@ Representing visually data that does not necessarily have a very natural
 or obvious visual representation.
 ```
 
--	물리적으로 보이지 않는 추상적인 데이터를 어떻게 표현할까? 예를 들어 시간이라면 어떻게 표현되어야 가장 적합할지 고민이 필요하다.
+-	물리적으로 보이지 않는 추상적인 데이터를 어떻게 표현할까?
+-	예를 들어 시간이라면 어떻게 표현되어야 가장 적합할지 고민이 필요하다.
 
 ### Interactive
 
@@ -37,7 +38,9 @@ Some visual representation that helps us store some of the information
 rather than having all this information in our mind.
 ```
 
--	예를 들어 두개의 큰 수 사이의 곱셈을 암산하는 것보다 종이에 써서 계산하면 쉽게 문제를 해결할 수 있는데, 이는 중간 단계에서 정보를 저장하기 때문에 우리가 모든 것을 머리 속에서 기억할 필요 없기 때문이다. 시각적 표현을 통해서도 이러한 경험을 가능하게 할 수 있다.
+-	예를 들어 두개의 큰 수 사이의 곱셈을 암산하는 것보다 종이에 써서 계산하면 쉽게 문제를 해결할 수 있다.
+-	이는 중간 단계에서 정보를 저장하기 때문에 우리가 모든 것을 머리 속에서 기억할 필요 없기 때문이다.
+-	시각적 표현을 통해서도 이러한 경험을 가능하게 할 수 있다.
 
 Why visualize data?
 -------------------
@@ -46,11 +49,10 @@ Because data is an abstract representation of some reality or some phenomena we 
 
 *[img1] Diagram of Data visualization Process* ![Image of VDpipeline](https://github.com/deepnsoul/TIL/blob/master/infovis/fig/VDpipeline.png)
 
--	문제는 우리가 관심 있는 데이터가 추상적이라는 것이다. 시각화를 이용한다면 가지고 있는 지식과 질문을 통해 어떤 현상에 대해 더 나은 이해가 가능하다.
+-	문제는 우리가 관심 있는 데이터가 추상적이라는 것이다.
+-	시각화를 이용한다면 가지고 있는 지식과 질문을 통해 어떤 현상에 대해 더 나은 이해가 가능하다.
 
 ### Three main purposes of Visualization
-
-시각화의 주요 목적은 크게 세 가지로 구분할 수 있다. Explanatory는 아이디어를 전달하기 위한 `Commnunication` 의 목적을, Exploratory는 질문에 대한 답을 찾고 가설을 세우기 위한 `Analyzing` 의 목적을, 마지막으로 Comfirmatory는 실제 데이터 안에서 가설을 확인하기 위한 Exploratory와 비슷한 목적을 가지고 있다.
 
 -	`Explanatory for communication`
 
@@ -68,6 +70,13 @@ Because data is an abstract representation of some reality or some phenomena we 
 
 	-	to check whether hypothesis actually holds in the data
 	-	there is person who is using visualization here has some hypothesis or question in mind that needs to be checked out
+
+---
+
+-	시각화의 주요 목적은 크게 세 가지로 구분할 수 있다.
+-	Explanatory는 아이디어를 전달하기 위한 `Commnunication` 의 목적을,
+-	Exploratory는 질문에 대한 답을 찾고 가설을 세우기 위한 `Analyzing` 의 목적을,
+-	마지막으로 Comfirmatory는 실제 데이터 안에서 가설을 확인하기 위한 Exploratory와 같은 목적을 가지고 있다.
 
 ### Why use a Graphical Representation
 
@@ -98,3 +107,33 @@ Because data is an abstract representation of some reality or some phenomena we 
 -	마지막으로 통계는 데이터에 대한 요약 정보를 담고 있는데, 이를 통해 우리는 가장 중요한 정보를 전달할 수 있다. 그러나 통계의 문제점은 통합된 정보만 보여주기 때문에 많은 세부 정보들이 제거된다는 점이다.
 
 -	데이터 시각화를 통해 우리는 통계 뒤에 숨겨진 정보를 잘 인식할 수 있다.
+
+### Why Use Computers to Visualize Data?
+
+1.	The first one is obviously that with a computer, we can visualize a lot of data
+2.	The second reason is that computers allow you to interact with digital graphical representations.
+3.	But, there are still people who actually like drawing data with their hands. [Dear Data](http://www.dear-data.com/) by Giorgia Lupi and Stefanie Posavec is a beautiful example.
+
+---
+
+-	데이터 시각화 과정에서 컴퓨터를 이용하면 많은 양의 데이터를 시각화 할 수 있다.
+-	또한 인터렉티브한 환경도 구성할 수 있는 점도 큰 장점이다.
+-	여전히 손으로 직접 데이터를 시작화하는 프로젝트도 진행되고 있는데, 이를 통해 컴퓨터로 할 수 없는 다른 인사이트를 이끌어낼 수 있다.
+
+### Why Use Interaction?
+
+-	Not all questions can be answered by looking at one single visual representation.
+-	Therefore, having a system that can change as we interact with it and helps us answer multiple questions
+-	An interesting area of research in visualization is how to do visualization with other devices and other interaction modes
+
+---
+
+-	단순히 하나의 시각적 표현은 여러 질문에 대한 답변을 할 수 없다.
+-	그러므로, 사용자가 직접 시스템을 변경할 수 있는 인터렉티브한 환경은 다양한 질문에 대한 답변을 가능하게 한다.
+-	다양한 디바이스에서 어떻게 인터렉티브 환경을 구성할 것인가? 이 주제는 현재 인터렉티브 분야에서 활발하게 진행되고 있는 연구 중에 하나이다.  
+
+### Assessing the Quality of a Visualization
+
+How do you know that one visualization is better than another? Is that not subjective?
+
+**Some visual representations are clearly better** because they are easier to interpret, and easier and faster, and more accurate to read.
