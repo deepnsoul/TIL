@@ -47,7 +47,7 @@ Why visualize data?
 
 Because data is an abstract representation of some reality or some phenomena we are interested in. In general, people who are using visualization, come with some pre-existing knowledge and some goal related to better understanding some phenomena.
 
-*[img1] Diagram of Data visualization Process* ![Image of VDpipeline](https://github.com/deepnsoul/TIL/blob/master/infovis/fig/VDpipeline.png)
+*[img1] Diagram of Data visualization Process* ![Image of VDpipeline](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/VDpipeline.png)
 
 -	문제는 우리가 관심 있는 데이터가 추상적이라는 것이다.
 -	시각화를 이용한다면 가지고 있는 지식과 질문을 통해 어떤 현상에 대해 더 나은 이해가 가능하다.
@@ -92,7 +92,7 @@ Because data is an abstract representation of some reality or some phenomena we 
 
 	-	statistics are summaries of information that is contained in the data so that we can communicate the most important information.
 	-	The problem though with statistics is that they aggregate information and remove a lot of details.
-	-	Anscombe's Quartet is an image that consist of four plots with four diffent datasets ![imamge of anscombe's quartet](https://github.com/deepnsoul/TIL/blob/master/infovis/fig/anscombe.png)
+	-	Anscombe's Quartet is an image that consist of four plots with four diffent datasets ![imamge of anscombe's quartet](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/anscombe.png)
 	-	As you can see, these four scatter plots have very different patterns. But when we calculate a number of common statistics on top of these four patterns, we realize that they have exactly the same average.
 	-	When we visualize data, we can readily perceive information that is hidden in the statistics.
 
@@ -137,14 +137,14 @@ Assessing the Quality of a Visualization
 
 How do you know that one visualization is better than another? Is that not subjective? **Some visual representations are clearly better** because they are easier to interpret, and easier and faster, and more accurate to read.
 
-*[img2] The pie charts of a world of drugs* ![image of pie charts](https://github.com/deepnsoul/TIL/blob/master/infovis/fig/error.png)
+*[img2] The pie charts of a world of drugs* ![image of pie charts](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/error.png)
 
 -	If your goal is to represent the trend over time and how they change and intersect, it is not a particularly good representation.
 -	We tend to perceive quantity with the area of the segments. But the quantity that the designer here wants to convey is actually represented with the angle of the pies.
 -	Another problem is that the angle and the size interfere. So it is very hard to disentangle these two pieces of information.
 -	One more problem is that if we want to see how proportions change over time, we have to mentally link these areas across the segments, which are also not aligned, which makes these comparison even harder.
 
-*[img3] The line charts of a world of drugs* ![image of pie charts](https://github.com/deepnsoul/TIL/blob/master/infovis/fig/correct.png)
+*[img3] The line charts of a world of drugs* ![image of line charts](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/correct.png)
 
 -	But if I represent exactly the same data with a line chart, observing trend over time and how they relate to each other, how these markets relate to each other, is much easier.
 -	So, when you are evaluating, assessing the quality of a visual representation, you have to think first of all, what is the intent, what problem am I try to solve, what information am I trying to convey.
