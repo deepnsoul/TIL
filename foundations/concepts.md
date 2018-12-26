@@ -1,7 +1,7 @@
 Infovis Basic Concepts
 ======================
 
-coursera **[Information Visualization: Foundations](https://www.coursera.org/learn/information-visualization-fundamentals/)** course fundamental concepts in Week1 by **Enrico Bertini** at New York University Tandon School of Engineering
+coursera **[Information Visualization: Foundations](https://www.coursera.org/learn/information-visualization-fundamentals/)** course in week1 by **Enrico Bertini** at New York University Tandon School of Engineering
 
 What is Information Visualization?
 ----------------------------------
