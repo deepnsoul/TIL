@@ -137,6 +137,11 @@ Assessing the Quality of a Visualization
 
 How do you know that one visualization is better than another? Is that not subjective? **Some visual representations are clearly better** because they are easier to interpret, and easier and faster, and more accurate to read.
 
+---
+
+-	어떻게 한 시각화가 다른 것보다 더 나은지 알 수 있을까? 이러한 평가는 주관적인 것이 아닐까?
+-	**분명한 것은 다른 것보다 더 나은 시각화가 존재한다는 것** 이다. 이것들은 더 이해하기 쉽고, 더 쉽고 빠르고 정확하게 읽을 수 있다.  
+
 *[img2] The pie charts of a world of drugs* ![image of pie charts](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/error.png)
 
 -	If your goal is to represent the trend over time and how they change and intersect, it is not a particularly good representation.
@@ -144,11 +149,25 @@ How do you know that one visualization is better than another? Is that not subje
 -	Another problem is that the angle and the size interfere. So it is very hard to disentangle these two pieces of information.
 -	One more problem is that if we want to see how proportions change over time, we have to mentally link these areas across the segments, which are also not aligned, which makes these comparison even harder.
 
+---
+
+-	예를 들어, 만약 이 파이차트[img2]를 그린 목적이 시간에 따른 변화를 보고자 한 것이었다면, 이 방식은 좋은 표현이 아니다.
+-	몇 가지 이유가 있는데,
+-	먼저 우리는 구분된 영역의 크기를 통해 그 양을 인지하는 경향이 있다. 그러나 여기서는 실제로 파이의 각도가 양을 의미한다.  
+-	다른 문제는 각도와 크기라는 서로 다른 종류의 정보가 이해를 방해하고 해석하기 어렵게 만든다.
+-	마지막으로 시간에 따른 변화를 보기 위해서는 한 파이차트에서 구분된 영역을 다른 파이차트와 연결해서 봐야하는데, 서로 떨어져있기 때문에 비교가 어렵다.
+
 *[img3] The line charts of a world of drugs* ![image of line charts](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/correct.png)
 
 -	But if I represent exactly the same data with a line chart, observing trend over time and how they relate to each other, how these markets relate to each other, is much easier.
 -	So, when you are evaluating, assessing the quality of a visual representation, you have to think first of all, what is the intent, what problem am I try to solve, what information am I trying to convey.
 -	And then figure out whether one visual representation is bad at conveying this information than the other.
+
+---
+
+-	이와 다르게 라인차트[img3]에서는 시간에 따른 변화나 그것들이 어떻게 관련되어 있는지 쉽게 관찰할 수 있다.
+-	따라서, 우리가 시각적 표현의 질을 평가할 때 먼저 우리가 풀고자 하는 문제가 무엇이고, 어떤 정보를 전달하려는 것인지 생각해야 한다.
+-	다음으로 이 정보들을 전달할 때 어떠한 시각적 표현이 다른 것보다 나은지를 알아내야 한다.
 
 ```
 Designing effective visualizations requires two main steps.
@@ -164,16 +183,6 @@ The second skill is being able to compare the solutions in an effective way.
 
 ---
 
--	어떻게 한 시각화가 다른 것보다 더 나은지 알 수 있을까? 이러한 평가는 주관적인 것이 아닐까?
--	**분명한 것은 다른 것보다 더 나은 시각화가 존재한다는 것** 이다. 이것들은 더 이해하기 쉽고, 더 쉽고 빠르고 정확하게 읽을 수 있다.  
--	예를 들어, 만약 이 파이차트[img2]를 그린 목적이 시간에 따른 변화를 보고자 한 것이었다면, 이 방식은 좋은 표현이 아니다.
--	몇 가지 이유가 있는데,
--	먼저 우리는 구분된 영역의 크기를 통해 그 양을 인지하는 경향이 있다. 그러나 여기서는 실제로 파이의 각도가 양을 의미한다.  
--	다른 문제는 각도와 크기라는 서로 다른 종류의 정보가 이해를 방해하고 해석하기 어렵게 만든다.
--	마지막으로 시간에 따른 변화를 보기 위해서는 한 파이차트에서 구분된 영역을 다른 파이차트와 연결해서 봐야하는데, 서로 떨어져있기 때문에 비교가 어렵다.
--	이와 다르게 라인차트[img3]에서는 시간에 따른 변화나 그것들이 어떻게 관련되어 있는지 쉽게 관찰할 수 있다.
--	따라서, 우리가 시각적 표현의 질을 평가할 때 먼저 우리가 풀고자 하는 문제가 무엇이고, 어떤 정보를 전달하려는 것인지 생각해야 한다.
--	다음으로 이 정보들을 전달할 때 어떠한 시각적 표현이 다른 것보다 나은지를 알아내야 한다.
 -	정리하자면, 효과적으로 시각화를 디자인하기 위해서는 두 가지 단계가 필요하다.
 -	첫 번째 단계는 디자인 범위를 아는 것이고,
 -	두 번째는 효과적인 방법으로 디자인 해결책들을 비교할 수 있는 능력을 갖추는 것이다.
