@@ -6,7 +6,7 @@ coursera **[Information Visualization: Foundations](https://www.coursera.org/lea
 What is the role data plays in the visualization process?
 ---------------------------------------------------------
 
-*[img1] Three main stages of data processing* ![Image of dataprocess](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/dataprocess.pngg)
+*[img1] Three main stages of data processing* ![Image of dataprocess](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/dataprocess.png)
 
 1.	`Collection`: create data
 2.	`Transformations`: to convert the data into a format or configuration that is necessary to transform them into visual representations
