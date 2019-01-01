@@ -77,3 +77,35 @@ Attributes: properties of these objects/entities
 -	네트워크 또는 트리는 항목이 링크로 연결되어있는 특징을 가지고 있다.
 -	즉, 네트워크는 노드(항목)와 노드와 연결되어 있는 링크로 구성되며, 이들도 특성을 가질 수 있다.
 -	특성은 노드와 링크의 특징을 설명하며, 예를 들어 노드의 사이즈 등을 결정한다.
+
+### Attribute Types
+
+#### #. day 001, 190102
+
+There are three main types of attributes
+
+-	categorical - Two or more categories but no intrinsic order
+
+	-	simple ex) gender: male, female
+	-	product sales data set ex) product: office supplies, technology, furniture
+
+-	ordinal
+
+	-	The categories have an order
+	-	but, it is not meaningful to perform any arithmetic operation between these categories
+	-	simple ex) economic status: low, medium, high
+	-	product sales data set ex) order priority: low, medium, high, critical
+
+-	quantitative
+
+	-	The values represent a measured qunatity
+	-	in general, with quantitative attributes, you can perform any kind of arithmetic operation among them
+	-	simple ex) weight: 60kg, 81kg, 94kg...
+	-	product sales data set ex) sales: 261.54, 10123.02, 244.57...
+
+---
+
+-	속성은 세가지 유형으로 구분될 수 있다.
+-	범주형 자료는 두 개 이상의 범주로 구성되며, 이 들 사이의 순서는 의미가 없다.
+-	순위형 자료는 두 개 이상의 범주를 가지며, 이 들 사이의 순서가 존재한다. 단, 순서 사이의 거리를 알 수 없기 때문에 산수적 계산은 의미가 없다.
+-	양적 자료의 값은 측정된 수량으로 표현되기 때문에, 이들 사이의 산수적 계산이 가능하다.  
