@@ -130,3 +130,40 @@ There are three main types of attributes
 -	Sequential은 한쪽 방향의 의미만 가지지만, Diverging은 양쪽 방향의 의미를 가지고 있어 0을 중심으로 음수, 양수를 모두 포함한다.
 -	Cyclic은 년, 월, 요일과 같은 주기성을 의미하고, Hierarchical은 하위 항목을 가지는 위계적인 구조를 의미한다.
 -	주로 시간과 주기를 나타내는 자료는 양적 자료와 관련이 있다.
+
+### Example for Attribute Types and Semantics
+
+#### #. day 04, 190104
+
+-	`Categorical` Coustomer segment: consumer, corporate, home office, small business
+-	`Categorical`,`Spatial`,`Hierarchical` Region: Atlantic, Nunavut, ontario..., Province: New Brimswick, Nova Scotia, Nunavut...
+-	`Ordinal` or `Categorical` Order ID: 16326, 8710, 50657...
+-	`Ordinal` or `Categorical` Product Container: jumbo box, jumbo drum, large box, medium box, small box...
+
+---
+
+-	속성의 유형이나 의미는 데이터에 대한 이해 정도에 따라 다르게 나타날 수 있다.
+-	위의 세 번째 예시에서 Order ID의 숫자가 양적 자료가 아니고, 순서를 가지고 있는 순위형 자료라는 것을 알기 위해서는 데이터에 대한 사전 이해가 필요하다.
+
+### Data Abstraction to Visualization
+
+#### #. day 04, 190104
+
+knowing what kind of attribute and attribute meaning will give you guidance in selecting appropriate visual representations.
+
+*[img4] Line chart* ![Image of Line chart](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/linechart.png)
+
+-	In the first chart, I have the x-axis of the time and the y-axis of the quantity change over time.
+-	This is appropriate use of the line chart.
+-	Line chart on the right side tries to use exactly the same design, but on the x-axis, I have a number of categories.
+-	When you look at this chart, you might think that what this chart shows is changing over time.
+-	But in fact there is no particular trend and patterns are not meaningful here.
+
+---
+
+-	왼쪽의 그래프는 x축이 시간, y축은 시간에 따라 변하는 양을 보여준다.
+-	이러한 데이터는 선그래프를 사용하는 것이 적절하다.
+-	오른쪽 그래프는 x축이 범주형으로 구성되어 있다. 왼쪽과 완전히 동일한 선그래프이기 때문에 우리는 시간에 따라 변한다고 생각할 수 있다.  
+-	그러나, x축이 범주형이기 때문에 그래프의 선은 추세를 나타내는 것이 아니며, 여기서 선의 형태는 의미가 없다.  
+
+*[img5] Bar chart* ![Image of Line chart](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/linechart.png)
