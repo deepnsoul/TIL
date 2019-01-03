@@ -80,23 +80,23 @@ Attributes: properties of these objects/entities
 
 ### Attribute Types
 
-#### #. day 001, 190102
+#### #. day 02, 190102
 
 There are three main types of attributes
 
--	categorical - Two or more categories but no intrinsic order
+-	Categorical - Two or more categories but no intrinsic order
 
 	-	simple ex) gender: male, female
 	-	product sales data set ex) product: office supplies, technology, furniture
 
--	ordinal
+-	Ordinal
 
 	-	The categories have an order
 	-	but, it is not meaningful to perform any arithmetic operation between these categories
 	-	simple ex) economic status: low, medium, high
 	-	product sales data set ex) order priority: low, medium, high, critical
 
--	quantitative
+-	Quantitative
 
 	-	The values represent a measured qunatity
 	-	in general, with quantitative attributes, you can perform any kind of arithmetic operation among them
@@ -109,3 +109,24 @@ There are three main types of attributes
 -	범주형 자료는 두 개 이상의 범주로 구성되며, 이 들 사이의 순서는 의미가 없다.
 -	순위형 자료는 두 개 이상의 범주를 가지며, 이 들 사이의 순서가 존재한다. 단, 순서 사이의 거리를 알 수 없기 때문에 산수적 계산은 의미가 없다.
 -	양적 자료의 값은 측정된 수량으로 표현되기 때문에, 이들 사이의 산수적 계산이 가능하다.  
+
+### Attribute Semantics(Characteristic)
+
+#### #. day 03, 190103
+
+-	Spatial and Temporal Semantics: Attribue that have spatial or temporal meaning
+	-	ex) Spatial: Region(categorial), Latitude & Longitude(quantitative)
+	-	ex) Temporal : Order date(quantitative)
+-	Sequential, Diverging and Cyclic
+	-	ex) Diverging: Profit(quantitative having zero value)
+	-	ex) Cyclic: Month of order date(quantitative)
+-	Hierarchical
+	-	ex) Product category(categorical) > Product sub-category(categorical)
+
+---
+
+-	사전에 정의된 속성의 의미(또는 특징)는 여러가지가 있다.
+-	Spatial은 공간의 의미, Temporal은 시간의 의미를 가진다.
+-	Sequential은 한쪽 방향의 의미만 가지지만, Diverging은 양쪽 방향의 의미를 가지고 있어 0을 중심으로 음수, 양수를 모두 포함한다.
+-	Cyclic은 년, 월, 요일과 같은 주기성을 의미하고, Hierarchical은 하위 항목을 가지는 위계적인 구조를 의미한다.
+-	주로 시간과 주기를 나타내는 자료는 양적 자료와 관련이 있다.
