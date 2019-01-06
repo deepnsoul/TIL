@@ -199,9 +199,41 @@ knowing what kind of attribute and attribute meaning will give you guidance in s
 
 ---
 
--	두 개의 범주 속성이 있고, 이 두 범주 속성의 교차 부분에 발산하는 양이있을 때 히트 맵 또는 매트릭스를 사용할 수 있다. 이것을 발산하는 양적 속성이라고 부른다.
+-	두 개의 범주형 속성이 있고, 이 두 범주형 속성의 교차 부분에 발산하는 양이있을 때 히트 맵 또는 매트릭스를 사용할 수 있다. 이것을 발산하는 양적 속성이라고 부른다.
 -	왼쪽 히트 맵에서는 양적 속성의 값을 한 색상 계열의 여러가지 톤을 이용하여 표시하였다.
 -	오른쪽 히트 맵에서는 빨간색, 흰색, 파란색의 3 가지 주요 색상을 사용하였다.
 -	0 값은 흰색으로 매핑되고 양수 값은 파란색 색상 계열의 강도에 따라 다른 톤으로 매핑하였고 음수 값은 빨간색 계열의 색상으로 매핑하였다.
 -	오른쪽 히트 맵은 음수 양수를 구별하기가 어려운 반면, 오른쪽은 그것을 구별하기가 쉽다.
 -	속성의 특징을 아는 것은 시각화하는 방법에 대한 구체적인 결정을 내리는데 도움을 준다.
+
+### Data Profiling
+
+#### #. day 07, 190107
+
+You have to become familiar with your data set to connect data abstraction.
+
+-	`Data familiarization and profiling`
+	-	Data coming from different sources
+	-	Meaning of data often not evident
+	-	Effort and interactions needed to understand meaning
+
+---
+
+-	데이터 추상을 진행하기에 앞서 현재 가지고 있는 데이터 세트에 친숙해지는 과정, 데이터 프로파일링이 필요하다.
+-	여러 다른 출처로부터 데이터가 수집되고, 종종 그 의미가 불분명하기도 하다.
+-	따라서, 데이터를 제공하는 클라이언트와의 커뮤니케이션 노력을 통해 데이터의 각 속성의 의미에 대해 훨씬 더 깊은 이해가 선행되어야 한다.  
+
+Another very important activity usually perform at the beginning of the data visualization project is checking data quality and doing what we call data wrangling.
+
+-	`Data Quality and "wrangling"`
+	-	Data quality means that data often comes in ways that are not necessarily precise or complete.
+	-	ex) missing values, wrong values
+	-	The activities necessary to identify and fix these problems so that you can change this sum of values ​​for your data or even transfer your data from one type to another.
+
+---
+
+-	또한 일반적으로 데이터 시각화 전에 선행되어야 할 중요한 작업은 데이터 품질을 확인하는 데이터 wrangling이다.
+-	데이터 품질을 확인하는 것이 중요한 이유는 데이터가 종종 정확하지 않거나 완전하지 않게 제공되기 때문이다.
+-	예를 들면 누락된 값이나, 측정 및 입력 이상으로 인한 잘못된 값이 데이터 세트에 포함될 수 있다.
+-	따라서 이러한 문제점을 해결하기 위해 데이터 총 개수를 수정하거나 데이터의 유형을 다르게 변경할 수 있다.
+-	이 과정의 자세한 부분은 이번 코스에서는 다루지 않는다.
