@@ -147,7 +147,7 @@ There are three main types of attributes
 
 ### Data Abstraction to Visualization
 
-#### #. day 04, 190104
+#### #. day 06, 190106
 
 knowing what kind of attribute and attribute meaning will give you guidance in selecting appropriate visual representations.
 
@@ -161,9 +161,47 @@ knowing what kind of attribute and attribute meaning will give you guidance in s
 
 ---
 
--	왼쪽의 그래프는 x축이 시간, y축은 시간에 따라 변하는 양을 보여준다.
--	이러한 데이터는 선그래프를 사용하는 것이 적절하다.
--	오른쪽 그래프는 x축이 범주형으로 구성되어 있다. 왼쪽과 완전히 동일한 선그래프이기 때문에 우리는 시간에 따라 변한다고 생각할 수 있다.  
--	그러나, x축이 범주형이기 때문에 그래프의 선은 추세를 나타내는 것이 아니며, 여기서 선의 형태는 의미가 없다.  
+-	왼쪽의 차트는 x축이 시간, y축은 시간에 따라 변하는 양을 보여준다.
+-	이러한 데이터는 선차트를 사용하는 것이 적절하다.
+-	오른쪽 차트는 x축이 범주형으로 구성되어 있다. 왼쪽과 완전히 동일한 선차트이기 때문에 우리는 시간에 따라 변한다고 생각할 수 있다.  
+-	그러나, x축이 범주형이기 때문에 차트의 선은 추세를 나타내는 것이 아니며, 여기서 선의 패턴은 의미가 없다.  
 
-*[img5] Bar chart* ![Image of Line chart](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/linechart.png)
+*[img5] Bar chart* ![Image of bar  chart](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/barchart.png)
+
+-	Bar charts can accommodate information about categories, frequencies, or statistics associated with these categories.
+-	Here, I reorder this bar chart according to the values, frequencies, or statistics that is map to the height of the bar.
+-	Often, being able to reorder bar chart is very useful because it allows us to more reasily read the progression of values.
+
+---
+
+-	막대차트에는 범주형 자료와, 빈도와 같이 범주형 자료에 관련된 통계를 적용시킬 수 있다.
+-	오른쪽 차트는 막대의 높이에 매핑되는 값, 빈도 또는 통계에 따라서 막대 차트 순서를 변경한 것이다.
+-	오른쪽 차트에서 값의 진행 과정을 보다 쉽게 읽을 수 있기 때문에 막대 차트의 순서를 바꾸는 것은 매우 유용하다.
+
+*[img6] Map* ![Image of map](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/spatial.png)
+
+-	What we know is that if we possess spatial information, spatial attributes, we know that using a spatial representation like a map is one of the options available.
+-	But, using a map is not necessarily the best solution always when we like to visualize spatial data.
+
+---
+
+-	공간에 관련된 속성을 가지고 있다면 지도와 같은 공간 표현은 가능한 옵션 중 하나이다.
+-	그러나 지도를 사용하는 것이 공간 데이터를 시각화 할 때 항상 최선의 해결책은 아니다.
+
+*[img7] Heat map or Matrix* ![Image of heat map](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/diverging.png)
+
+-	We have a heat map also called matrix, when we have two categorial attributes and at the intersection of these two category attributes, we have a quantity that is actually diverging, it is a diverging quantitative attributes.
+-	In the first above, display the value of this quantitative attribute through a color scale that uses different levels of color tone.
+-	While in the other below, we have three main colors used, three kinds of main colors. We have red, white, and blue
+-	Zero value is map to white, and positive values ​​are map to different color intensities of blue, and negative values ​​are map to different color intensities of red.
+-	First above, it is difficult to distinguish between positive and negative, while the second is very easy to distinguish between negative and positive values.
+-	Again, knowing characteristics of the attribute helps us make specific decisions about how to visualize this attribute.
+
+---
+
+-	두 개의 범주 속성이 있고, 이 두 범주 속성의 교차 부분에 발산하는 양이있을 때 히트 맵 또는 매트릭스를 사용할 수 있다. 이것을 발산하는 양적 속성이라고 부른다.
+-	왼쪽 히트 맵에서는 양적 속성의 값을 한 색상 계열의 여러가지 톤을 이용하여 표시하였다.
+-	오른쪽 히트 맵에서는 빨간색, 흰색, 파란색의 3 가지 주요 색상을 사용하였다.
+-	0 값은 흰색으로 매핑되고 양수 값은 파란색 색상 계열의 강도에 따라 다른 톤으로 매핑하였고 음수 값은 빨간색 계열의 색상으로 매핑하였다.
+-	오른쪽 히트 맵은 음수 양수를 구별하기가 어려운 반면, 오른쪽은 그것을 구별하기가 쉽다.
+-	속성의 특징을 아는 것은 시각화하는 방법에 대한 구체적인 결정을 내리는데 도움을 준다.
