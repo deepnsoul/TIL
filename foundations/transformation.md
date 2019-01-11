@@ -50,7 +50,7 @@ How to Visualize?
 -	또한 더 복잡한 그래프를 그리기 이전에 훈련할 수 있는 그래프이다.  
 -	일반적으로 둘 이상의 속성의 조합을 통해 그래프가 그려지는데 속성의 조합은 그래프 유형에 따라 차이가 있다.
 
-	*[img1] Bar chart* [Image of barchart](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/basic_barchart.png)
+*[img1] Bar chart* ![Image of barchart](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/basic_barchart.png)
 
 -	Bar chart
 
