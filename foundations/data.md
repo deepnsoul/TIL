@@ -161,10 +161,10 @@ knowing what kind of attribute and attribute meaning will give you guidance in s
 
 ---
 
--	왼쪽의 차트는 x축이 시간, y축은 시간에 따라 변하는 양을 보여준다.
--	이러한 데이터는 선차트를 사용하는 것이 적절하다.
--	오른쪽 차트는 x축이 범주형으로 구성되어 있다. 왼쪽과 완전히 동일한 선차트이기 때문에 우리는 시간에 따라 변한다고 생각할 수 있다.  
--	그러나, x축이 범주형이기 때문에 차트의 선은 추세를 나타내는 것이 아니며, 여기서 선의 패턴은 의미가 없다.  
+-	왼쪽의 그래프는 x축이 시간, y축은 시간에 따라 변하는 양을 보여준다.
+-	이러한 데이터는 선그래프를 사용하는 것이 적절하다.
+-	오른쪽 그래프는 x축이 범주형으로 구성되어 있다. 왼쪽과 완전히 동일한 선그래프이기 때문에 우리는 시간에 따라 변한다고 생각할 수 있다.  
+-	그러나, x축이 범주형이기 때문에 그래프의 선은 추세를 나타내는 것이 아니며, 여기서 선의 패턴은 의미가 없다.  
 
 *[img5] Bar chart* ![Image of bar  chart](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/barchart.png)
 
@@ -174,9 +174,9 @@ knowing what kind of attribute and attribute meaning will give you guidance in s
 
 ---
 
--	막대차트에는 범주형 자료와, 빈도와 같이 범주형 자료에 관련된 통계를 적용시킬 수 있다.
--	오른쪽 차트는 막대의 높이에 매핑되는 값, 빈도 또는 통계에 따라서 막대 차트 순서를 변경한 것이다.
--	오른쪽 차트에서 값의 진행 과정을 보다 쉽게 읽을 수 있기 때문에 막대 차트의 순서를 바꾸는 것은 매우 유용하다.
+-	막대그래프에는 범주형 자료와, 빈도와 같이 범주형 자료에 관련된 통계를 적용시킬 수 있다.
+-	오른쪽 그래프는 막대의 높이에 매핑되는 값, 빈도 또는 통계에 따라서 막대 그래프 순서를 변경한 것이다.
+-	오른쪽 그래프에서 값의 진행 과정을 보다 쉽게 읽을 수 있기 때문에 막대 그래프의 순서를 바꾸는 것은 매우 유용하다.
 
 *[img6] Map* ![Image of map](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/spatial.png)
 
