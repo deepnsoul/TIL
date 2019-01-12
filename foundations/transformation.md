@@ -131,6 +131,8 @@ This is a summary of the graphs that I have just shown you and what kind of info
 
 ### Alternate Representations
 
+#### #. day 12, 190112
+
 It is possible to create different representation of the same data. Being able to think about alternative visual representations for the same information is one of the most important skills because it is useful once you have a number of alternatives in mind to be able to reason about which one is the most appropriate for your goal.
 
 ---
@@ -272,7 +274,6 @@ It is possible to create different representation of the same data. Being able t
 ---
 
 -	심볼맵은 위치를 나타내는 두 개의 값(x, y)을 지도에 기호로 나타내는데, 이때 기호의 크기는 해당 위치의 값의 비율을 의미한다.
--
 
 ![Image of symbol_alternatives](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/symbol_alternatives.png)
 
