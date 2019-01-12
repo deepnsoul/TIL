@@ -27,7 +27,7 @@ How to Visualize?
 -	데이터로부터 질문에 대한 답을 얻기 위해서 어떻게 시각화를 해야할까?
 -	이 문제를 해결하기 위해 두 단계로 진행할 수 있다.
 -	첫 번째는 무엇을 시각화할지 결정하는 것인데, 이는 데이터를 선택하고 변형하는 과정을 의미한다.
--	모든 단일 시각적 표현은 테이블의 일부 속성들을 이용해서 만들어지기 때문에, 원하는 문제를 해결할 수 있는 차트를 만드는데 필요한 정보를 추출하기 위해 데이터 변환이 필요하다.  
+-	모든 단일 시각적 표현은 테이블의 일부 속성들을 이용해서 만들어지기 때문에, 원하는 문제를 해결할 수 있는 그래프를 만드는데 필요한 정보를 추출하기 위해 데이터 변환이 필요하다.  
 -	두 번째 단계는 어떻게 시각화할지를 결정하는 것이다.
 -	이는 적절한 시각적 표현을 선택하고 디자인하는 것을 의미하는데, 선택은 이미 존재하는 포맷에서 목적에 맞는 적절한 표현을 선택하는 것을 말한다.
 -	디자인은 기존의 포맷이 아닌 현 문제에 대한 새로운 시각적 표현을 만드는 것을 말한다.
@@ -45,7 +45,7 @@ How to Visualize?
 
 ---
 
--	속성들의 조합을 시각화 할 수 있는 대표적인 그래프에는 막대차트, 선차트, 산점도, 매트릭스, 심볼맵이 있다.
+-	속성들의 조합을 시각화 할 수 있는 대표적인 그래프에는 막대그래프, 선그래프, 산점도, 매트릭스, 심볼맵이 있다.
 -	이들은 널리 채택되고 효과적이며, 유용하고, 상당한 부분의 시각화 문제를 해결할 수 있다.
 -	또한 더 복잡한 그래프를 그리기 이전에 훈련할 수 있는 그래프이다.  
 -	일반적으로 둘 이상의 속성의 조합을 통해 그래프가 그려지는데 속성의 조합은 그래프 유형에 따라 차이가 있다.
@@ -60,7 +60,7 @@ How to Visualize?
 
 ---
 
--	막대 차트는 범주에 따라 수량이 어떻게 분포하는지를 시각화한다.
+-	막대 그래프는 범주에 따라 수량이 어떻게 분포하는지를 시각화한다.
 -	따라서, 모든 막대는 하나의 범주를 나타내며, 막대의 길이는 수량을 의미한다.
 -	그림의 예시에서는 x축에 자치구를, y축에 차량 충돌 수를 나타내고 있다.
 
@@ -74,9 +74,9 @@ How to Visualize?
 
 ---
 
--	선 차트는 한 수량이 다른 수량(일반적으로 시간)에 관련하여 어떻게 변화하는지를 시각화한다.
+-	선 그래프는 한 수량이 다른 수량(일반적으로 시간)에 관련하여 어떻게 변화하는지를 시각화한다.
 -	그림의 예시에서는 x축에 시간을, y축에는 차량 충돌의 양을 나타내고 있다.
--	이러한 선 차트를 통해 우리는 몇 가지 추세를 확인할 수 있다.
+-	이러한 선 그래프를 통해 우리는 몇 가지 추세를 확인할 수 있다.
 
 `Scatter plot`
 
@@ -123,8 +123,165 @@ How to Visualize?
 
 *[img6] Summary of fundamental chats* ![Image of basic charts ](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/basic_charts.png)
 
-This is a summary of the graphs that I've just shown you and what kind of information, what kind of attributes, or combination of attributes can be represented with these graphs
+This is a summary of the graphs that I have just shown you and what kind of information, what kind of attributes, or combination of attributes can be represented with these graphs
 
 ---
 
 -	요약 그림에서는 다섯 개의 그래프가 각 각 어떠한 속성의 조합을 통해 생성될 수 있는지를 보여준다.  
+
+### Alternate Representations
+
+It is possible to create different representation of the same data. Being able to think about alternative visual representations for the same information is one of the most important skills because it is useful once you have a number of alternatives in mind to be able to reason about which one is the most appropriate for your goal.
+
+---
+
+동일한 데이터에 대해서 다양한 시각적 표현이 가능한데, 같은 정보에 대해서 대안적인 시각적 표현을 생각해내는 것은 중요한 기술 중 하나이다. 가장 적합한 시각적 표현을 찾는 목표를 이루기 위해서 여러 가지 대안을 비교하는 것이 유용하기 때문이다.
+
+`Bar graph alternatives`
+
+![Image of bar_alternatives](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/bar_alternatives.png)
+
+-	dot plot
+-	![Image of dotplot](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/bar-alt_dotplot.png)
+
+	-	we can use a simple dot.
+	-	but, it is hard for us typically when we see a cloud of dot like this one.
+	-	if we draw a little line like this one, all in a sudden we go back to interpreting this chart very similarly to the way we interpret a bar chart.
+
+---
+
+-	막대 그래프의 대안으로 단순히 점을 이용할 수 있다.
+-	그러나, 점만 찍어서는 어떤 범주에 대한 값 인지를 알아보기 어렵기 때문에 그림에서와 같이 범주와 선을 연결한다면, 막대 그래프와 유사하게 이해가 가능하다.
+
+-	line chart
+
+	-	we can connect these dots with lines.
+	-	the problem is this that the line chart tends to communicate to the reader the idea that these values are ordered.
+	-	Not only that, a line chart creates a very distinctive pattern, and we tend to interpret this pattern as meaningful.
+	-	But, when we have categorical information or categorical attribute on the x-axis, this pattern is not really meaningful, and these data items are not really ordered.
+
+---
+
+-	점들을 선으로 연결하여 선 그래프를 만들 수 있는데, 문제는 이러한 선 그래프가 값들 간의 순서가 있다는 정보를 내포하고 있다는 것이다.
+-	또한, 선 그래프는 구별되는 패턴을 생성하기 때문에, 패턴을 의미를 부여하게 된다.
+-	그러나 실제로 x축이 범주형 속성이라면, 이러한 패턴은 의미가 없으며, 값에 대한 순서도 없다.
+
+-	bubble chart
+
+-	![Image of dotplot](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/bar-alt_bubbles.png)
+
+	-	the area of the bubbles represents the value that corresponds to each category.
+	-	the problem is that it is much less common to represent the data in this way. So, your reader to be less comfortable with this visual representation.
+	-	the second problem as we will see later on in the course is that area size is not as effective in terms of communicating quantitative information as comparing the length of two bars.
+
+---
+
+-	버블 그래프에서 버블 영역은 각 각의 범주에 대응하는 값을 나타낸다.
+-	문제는 이러한 방식으로 데이터를 표현하는 것이 일반적이지 않기 때문에 독자들이 익숙하지 않을 수 있다.
+-	또한 버블의 면적 크기가 두 막대를 길이를 비교하는 것 만큼 양적 정보를 전달하는데 효과적이지 않다는 것이다.  
+
+`Scatter plot alternatives`
+
+![Image of scatter-alt_slope](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/scatter-alt_slope.png)
+
+-	slope chart
+	-	this graph is called the slope chart.
+	-	we have two parallel axes. Every item in the dataset can be represented by a line connecting the two values that are in the two axes.
+	-	What the slope chart is useful for is to see when the values are going in one direction or in the other direction.
+	-	in these example, on the left hand side axes, we have the proportion between wins and losses of each team and on the other axis on the right hand side, you have the amount that has been spent by the team to hire the players.
+	-	so, here what you see is that the slopes that go up mean teams that are not performing particularly well but spend a lot of money.
+
+---
+
+-	경사(slope) 그래프는 산점도와는 다르게 두 개 축이 서로 평행하며, 두 축에 있는 값을 연결하는 선으로 나타낼 수 있다.
+-	경사 그래프는 값이 언제 올라가고 내려가는지 확인하는데 유용하다.
+-	그림에서 왼쪽 축은 팀의 승리와 패배 점수의 비율이고, 오른쪽 축은 팀이 선수를 고용하는데 소비한 비용이다.
+-	올라가는 경사를 가진 팀이 돈을 많이 쓴 것에 비해 시합 결과가 좋지 않다는 것을 의미하며, 내려가는 경사는 그 반대를 의미한다.  
+
+`Line graph alternatives`
+
+![Image of line_alternatives](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/line_alternatives.png)
+
+-	bar chart
+
+	-	in the one that you see on the right, in place of lines, we have bars like in a bar chart, which is not as effective as the line chart to represent the actual trend, but it is useful in case you want to read the values, every single value accurately.
+
+-	area chart
+
+	-	the next one is the area chart, which is basically a version of the line chart where the area below the line is completely filled up.
+
+-	simple dots
+
+	-	the last one is one where we use just the simple dots.
+	-	but the problem with this one is that we cannot really trace the line and we cannot really see the trend.
+
+---
+
+-	선 그래프의 대안으로 세 가지를 생각해볼 수 있다.
+-	먼저, 오른쪽의 막대 그래프는 추세를 확인하는데에는 효과적이지 않지만, 각 각의 값 자체를 보는데는 유용하다.
+-	면적 그래프는, 아래 영역이 완전히 채워지는 선 그래프를 말한다.
+-	마지막으로 단순한 점을 사용할 수 있는데, 실제로는 점들을 추적하기 어렵기 때문에 추세를 제대로 파악할 수 없다.
+
+`Matrix alternatives`
+
+![Image of def_matrix](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/def_matrix.png)
+
+-	The matrix accommodates two categorical attributes, which are mapped into a few rows and a few columns.
+-	In this case, we have two rows and three columns. The values that are associated to the intersection of these categories are represented like the area of a symbol.
+-	In this case, the area of a square.
+-	These are the kind of information that you have to use to imagine different alternative visual representations for the matrix.
+
+---
+
+-	매트릭스는 두 범주형 속성을 가지며, 행과 열로의 매핑을 통해 표현된다.  
+-	그림의 경우, 두 개의 행과 세 개의 열이 있고, 두 개의 범주의 교차에 대한 값이 영역으로 표시된다. 여기서는 정사각형으로 표현하고 있다.
+-	이러한 정보를 가지고 매트릭스에 대한 대안적인 시각적 표현을 생성할 수 있다.  
+
+![Image of matrix_alternatives](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/matrix_alternatives.png)
+
+-	stack bar chart
+
+	-	the idea is that one way to arrange two categories is to use the rows for one of the categories
+	-	every bar that represents each of the categories is split in a number of smaller bars, colored bars, where every color represents the values of the other category.
+	-	but, it is pretty hard to see the distribution of the values across the two categories.
+
+-	bar graph
+
+	-	a graph where the two categories are nested.
+	-	we have rows for each categories.
+	-	within each category nested, we have the other categories.
+	-	but one problem here is that it does not scale visually as easily as the matrix representation.
+
+---
+
+-	매트릭스에 대한 대안적인 시각적 표현으로 누적막대 그래프와 막대 그래프를 사용할 수 있다.
+-	누적막대 그래프는 여러 범주를 한 행 또는 열로 표현한다.
+-	따라서 각 범주를 나타내는 막대는 여러 개의 작은 막대로 나뉘며, 색상은 다른 범주의 값을 의미한다.
+-	그러나, 누적막대 그래프는 개별 범주가 아닌 범주에 걸쳐 값의 분포를 보는 것이 꽤 어렵다.
+-	다음 방법으로 두 개의 범주를 중첩하여 막대 그래프로 표현할 수 있다.
+-	각 각의 범주를 행으로 나누고, 행 안에 세부 범주에 대한 값을 막대 그래프로 나타낼 수 있다.
+-	그러나 이는 막대의 길이가 들쭉날쭉하여 매트릭스처럼 시각적으로 표현을 확장하기에 어려움이 있다.  
+
+`Symbol map alternatives`
+
+![Image of def_symbolmap](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/def_symbol.png)
+
+-	We have two quantities that represent the location.
+-	x1, y1, x2, y2, and so on, and each one is represented with a small symbol and the size is proportional to the quantity.
+
+---
+
+-	심볼맵은 위치를 나타내는 두 개의 값(x, y)을 지도에 기호로 나타내는데, 이때 기호의 크기는 해당 위치의 값의 비율을 의미한다.
+-
+
+![Image of symbol_alternatives](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/symbol_alternatives.png)
+
+-	bar chart
+	-	get rid of the map completely and just create a list of locations, which in this case is a list of zip codes.
+	-	And for every zip code, we represent the value with a bar.
+	-	Every single zip code is a category and every bar is associated to a zip code and as a length that represents the quantity that is associated to the zip code.
+
+---
+
+-	심볼맵을 막대 그래프로 나타낼 수 있는데, 먼저 지도는 제거하고, 위치 목록을 우편번호를 이용하여 만들 수 있다.
+-	즉, 개별 우편 번호는 범주가 되며, 모든 막대의 길이는 우편번호와 관련한 값을 의미한다.
