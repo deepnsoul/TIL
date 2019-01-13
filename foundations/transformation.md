@@ -144,7 +144,7 @@ It is possible to create different representation of the same data. Being able t
 ![Image of bar_alternatives](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/bar_alternatives.png)
 
 -	dot plot
--	![Image of dotplot](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/bar-alt_dotplot.png)
+-	![Image of bar-alt_dotplot](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/bar-alt_dotplot.png)
 
 	-	we can use a simple dot.
 	-	but, it is hard for us typically when we see a cloud of dot like this one.
@@ -170,7 +170,7 @@ It is possible to create different representation of the same data. Being able t
 
 -	bubble chart
 
--	![Image of dotplot](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/bar-alt_bubbles.png)
+-	![Image of bar-alt_bubbles](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/bar-alt_bubbles.png)
 
 	-	the area of the bubbles represents the value that corresponds to each category.
 	-	the problem is that it is much less common to represent the data in this way. So, your reader to be less comfortable with this visual representation.
@@ -286,3 +286,62 @@ It is possible to create different representation of the same data. Being able t
 
 -	심볼맵을 막대 그래프로 나타낼 수 있는데, 먼저 지도는 제거하고, 위치 목록을 우편번호를 이용하여 만들 수 있다.
 -	즉, 개별 우편 번호는 범주가 되며, 모든 막대의 길이는 우편번호와 관련한 값을 의미한다.
+
+### Going Beyond Two Attributes
+
+#### #. day 13, 190113
+
+If you have additional attributes and you want to be able to introduce in the representation, there are several designs which is belonging to each charts.
+
+---
+
+-	추가적인 속성을 기존의 그래프에 추가하기 위한 몇 가지 방법이 있다. 여기서는 막대와 그래프와 선 그래프에 대해서만 다룬다.
+
+`Bar charts`
+
+![Image of bar_overtwo](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/bar_overtwo.png)
+
+In the vehicle collision data, we have vehicle type, main cause for the accident, and for each combination of these two categories, how many accidents or how many people injured we have. how do we represent these information with a bar chart? There are two main designs.
+
+---
+
+-그림의 예시는 차랑 충돌 데이터에서, 차량 유형과 사고의 주요 원인, 이 두 범주의 조합에 대해서 얼마나 많은 사고가 발생했는지를 막대 그래프의 두 가지 디자인으로 나타낸 것이다.
+
+-	stacked
+
+	-	we have as many bars as the number of categories that are included in the first categorical attribute and as many segments within each bar as the values that are in the other categorical attribute.
+	-	In this case, we have vehicle types represented by the three bars that you see in the stacked bar chart, and the main causes for collisions represented by the five colored.
+	-	the stacked bar graph is very good when your main question is regarding the proportion.
+
+-	grouped
+
+	-	one categorical attribute is mapped to the bar chart and this bar chart is repeated as many times as the number of categories that you have in the other categorical attribute. -the grouped bar chart is better when the goal is to compare every single value one to another.
+
+---
+
+-	먼저 누적막대 그래프는 첫 번째 속성을 범주를 여러 막대로 표현하고, 다른 나머지 속성을 각 각의 막대 내부에 구분을 두어 나타낸다.
+-	이번 예시의 경우 차량 유형을 3 개의 막대로, 충돌의 주요 원인을 5 가지 색상으로 막대 내부를 구분하였다.
+-	주요 질문이 비율에 관한 것이라면 누적 막대 그래프가 유용하다.
+-	다음으로 그룹 막대 그래프는 첫 번째 속성의 범주들을 그룹 막대 그래프로 매핑하고, 다른 속성의 범주 수 만큼 그룹 막대 그래프를 반복복하여 나타낸다.
+-	개별 값을 비교하려는 경우 그룹 막대 그래프가 유용하다.
+
+`Line charts`
+
+![Image of line_overtwo](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/line_overtwo.png)
+
+In the vehicle collision data, we have on the x-axis, time, month of the date, and on the y-axis we have number of collisions. we have an additional attribute which is the borough.
+
+-	separate lines
+
+	-	each one representing one borough
+	-	This is very good because since we have the lines represented in the same space, it is easy to compare their values.
+
+-	every single line is represented in a separate line chart.
+
+-	it is a sort of series of line charts one next to the other, one above or below the other.
+
+-	stacked area chart
+
+	-	the values across the categories are stacked one on top of the other.
+	-	these stacked area chart is good if the only question that you have is how does the proportion of these values change over time
+	-	but, it is not good to compare the values of these categories over time because the pattern that you see in the lines is affected by the shape of the line that is below the one that you are observing.
