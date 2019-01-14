@@ -295,7 +295,7 @@ If you have additional attributes and you want to be able to introduce in the re
 
 ---
 
--	추가적인 속성을 기존의 그래프에 추가하기 위한 몇 가지 방법이 있다. 여기서는 막대와 그래프와 선 그래프에 대해서만 다룬다.
+-	추가적인 속성을 기존의 그래프에 추가하기 위한 몇 가지 방법이 있다.
 
 `Bar charts`
 
@@ -322,14 +322,18 @@ In the vehicle collision data, we have vehicle type, main cause for the accident
 -	먼저 누적막대 그래프는 첫 번째 속성을 범주를 여러 막대로 표현하고, 다른 나머지 속성을 각 각의 막대 내부에 구분을 두어 나타낸다.
 -	이번 예시의 경우 차량 유형을 3 개의 막대로, 충돌의 주요 원인을 5 가지 색상으로 막대 내부를 구분하였다.
 -	주요 질문이 비율에 관한 것이라면 누적 막대 그래프가 유용하다.
--	다음으로 그룹 막대 그래프는 첫 번째 속성의 범주들을 그룹 막대 그래프로 매핑하고, 다른 속성의 범주 수 만큼 그룹 막대 그래프를 반복복하여 나타낸다.
+-	다음으로 그룹 막대 그래프는 첫 번째 속성의 범주들을 그룹 막대 그래프로 매핑하고, 다른 속성의 범주 수 만큼 그룹 막대 그래프를 반복하여 나타낸다.
 -	개별 값을 비교하려는 경우 그룹 막대 그래프가 유용하다.
 
 `Line charts`
 
 ![Image of line_overtwo](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/line_overtwo.png)
 
-In the vehicle collision data, we have on the x-axis, time, month of the date, and on the y-axis we have number of collisions. we have an additional attribute which is the borough.
+In the vehicle collision data, we have on the x-axis, time, year of the date, and on the y-axis we have number of collisions. we have an additional attribute which is the borough.
+
+---
+
+-	이번 그림의 예시 또한 차랑 충돌 데이터에서, x축은 시간, 년도를, y축은 충돌의 수를 보여준다. 추가적인 속성인 자치구를 그래프에 나타내기 위한 세 가지의 디자인을 생각해볼 수 있다.
 
 -	separate lines
 
@@ -345,3 +349,66 @@ In the vehicle collision data, we have on the x-axis, time, month of the date, a
 	-	the values across the categories are stacked one on top of the other.
 	-	these stacked area chart is good if the only question that you have is how does the proportion of these values change over time
 	-	but, it is not good to compare the values of these categories over time because the pattern that you see in the lines is affected by the shape of the line that is below the one that you are observing.
+
+---
+
+-	먼저, 색상으로 구분된 선 그래프인데, 각 각의 선은 한 자치구를 의미한다.
+-	이러한 형태의 디자인은 같은 공간에 모든 선들을 나타내기 그들 간의 값을 비교하기 쉽다.
+-	다음으로 개별 선마다 구분하여 그래프를 그리는 방식인데, 개별적인 선 그래프를 아래로 나열해서 볼 수 있다.
+-	마지막으로 누적 영역 그래프는 개별 범주의 값을 누적하여 위로 쌓아 나타내는 방식이다. 이러한 그래프는 값의 비율이 시간에 따라 어떻게 변하는지 알아보고자 할 때만 유용하다.
+-	다만, 시간 변화에 따른 범주 사이의 값을 비교하는 경우에는 모든 선의 형태가 바로 아래에 있는 선의 형태에 영향을 받기 때문에 이 방식이 효과적이지 않다.
+
+#### #. day 14, 190114
+
+`Scatter plots`
+
+![Image of scatter_3attri](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/scatter_3attri.png)
+
+here is another scatter plot having third attribute. That encodes information about a number of categories, each category, one color.
+
+---
+
+-	그림은 두 개의 속성을 가진 산점도에 하나의 속성을 색상으로 표현하여 총 세 개의 속성을 나타낸 산점도이다.  
+
+![Image of scatter_4attri](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/scatter_4attri.png)
+
+A scatter plot can encode up to four attributes. So in this case, we have exactly the same scatter plot, which is encoding one attribute on the X-axis, one on the Y-axis, now another one with color, and even another one with the size of the dots or bubbles.
+
+---
+
+-	이번 그림은 앞서 세 개의 속성을 표현한 산점도에 하나의 속성을 더 추가하여 점이나 버블의 크기를 통해 나타낸 산점도이다.
+-	산점도에서는 최대 네 개까지의 속성을 인코딩할 수 있으며, 그 이상은 인코딩된 정보를 이해하기 어려워 질 수 있다.
+
+![Image of scatter_facet](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/scatter_facet.png)
+
+We can do is to create a replica of the same scatter plot, where every single one contains only the data of one of the categories. They all come from the original scatter plot, and each one shows only the data that belongs to one of the categories that you see in the region on the right.
+
+This is a very general purpose technique, that is called faceting, and visualization method that you see here is also sometimes called small multiples.
+
+---
+
+-	그림은 색상으로 나누어진 한 범주의 항목들에 대해서 개별 산점도로 분할하여 나타내었다. 이렇게 한 범주의 항목을 나누어 표현하는 시각화 방법을 faceting 또는 small multiples라고 부른다.
+
+-	`Faceting`
+
+	-	select one categorical/ordinal attribute
+	-	create as many sets as the number of values
+	-	create one plot for each value
+	-	Faceting can be applied to any graph.
+	-	![Image of map_facet](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/map_facet.png)
+	-	Faceting with maps: I have data about the city of New York, and I split this information into different categories, and each map represents the data coming only from one of the categories.
+	-	![Image of line_facet](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/line_facet.png)
+	-	Faceting with line charts: I have one, two, three, four, five different categories of things that are changing over time, and rather than putting them all together in one graph overlapping, I create one graph for each of them.
+	-	this is a very general purpose technique, and it is useful especially when you have too many categories to show at once. you do not have an easy way to put all these categories together in one single plot.
+	-	you can just split them into a number of plots, and create what is called a small multiples presentation.
+
+---
+
+-	faceting은 세 가지 단계를 통해 진행될 수 있는데,
+-	먼저 하나의 범주형 속성을 정한 후 범수의 항목 별 값의 집합을 생성한다.
+-	다음으로 각 각의 값의 숫자 만큼 그래프를 그린다.
+-	faceting은 산점도 이외에도 모든 그래프에서 적용할 수 있다.
+-	맵 그래프를 faceting 한 그림의 예시를 보면, 뉴욕시에 대한 데이터이고, 하나의 범주 대해 개별적으로 항목을 분리하여 표현하였다.
+-	선 그래프를 faceting 한 그림의 예시는 한 범주의 다섯 개의 항목들에 대해 각 각의 그래프로 나타낸 것이다.
+-	faceting 방법은 한 범주의 항목들이 너무 많은 경우 유용하다. 모든 항목들을 하나의 단일 그래프에 표현하기는 쉽지 않다.
+-	따라서 여러 그래프로 분할하여 small multiples 방법으로 나타낼 수 있다.
