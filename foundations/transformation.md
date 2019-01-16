@@ -412,3 +412,48 @@ This is a very general purpose technique, that is called faceting, and visualiza
 -	선 그래프를 faceting 한 그림의 예시는 한 범주의 다섯 개의 항목들에 대해 각 각의 그래프로 나타낸 것이다.
 -	faceting 방법은 한 범주의 항목들이 너무 많은 경우 유용하다. 모든 항목들을 하나의 단일 그래프에 표현하기는 쉽지 않다.
 -	따라서 여러 그래프로 분할하여 small multiples 방법으로 나타낼 수 있다.
+
+### Data Transformation
+
+#### #. day 16, 190116
+
+We have two steps of data visualization. Now, we are going back to the first step, in trying to look into more details what this means.
+
+---
+
+데이터를 시각화의 두 가지 단계는 select and transform와 choose/design representation로 구성되어있다. 여기서는 첫 번째 단계를 자세히 살펴보려고 한다.
+
+`select and transform`
+
+-	selection: select from the table the attributes needed for the visualization
+	-	ex1) selecting three attributes and using a scatter plot ![Image of selecting_scatter](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/selecting_scatter.png)
+	-	In the food data set: visualize the relationship between carbohydrates and calories see how it is affected food category.
+	-	We are starting from a large data table with lots of attributes, and selecting three attributes out of them, which are those attributes that we need in order to answer these questions.
+	-	ex2) selectung two attributes and using a bar chart ![Image of selecting_bar](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/selecting_bar.png)  
+	-	see how the average amount of calories distributes across food category.
+	-	to do that, I have to select the food category and the amount of calories. every single bar represents one fruit category, and the height of the bar represents the average amount of calories.
+	-	ex) an intermediate step ![Image of selecting_interme](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/selecting_interme.png)  
+	-	but an intermediate aggregation step is necessary to answer this question. I need to aggregate information across all products, in order to calculate the average amount for every single category.
+
+---
+
+-	먼저 selection은 테이블에서 시각화를 위해 필요한 속성을 선택하는 과정을 말한다.
+-	그림의 예시는 식품 데이터 세트에서 탄수화물과 칼로리 간의 관계를 식품의 범주에 따라 어떻게 차이가 있는지 살펴보기 위해서 산점도로 시각화한 것이다.
+-	즉, 테이블의 많은 속성들 중 질문에 대한 답을 찾기 위해 세 개의 속성들을 선택하였다.
+-	다른 예시는 같은 식품 데이터 세트에서 칼로리의 평균이 식품의 범주에 따라 어떠한 분포를 가지는지 파악하기 위해서 막대 그래프로 시각화한 것이다.
+-	테이블에서 식품 유형과 칼로리의 양 두 개의 속성을 선택한 후 막대 그래프를 생성할 수 있고, 막대 그래프의 단일 막대는 과일의 범주를 나타나며, 높이는 평균 칼로리 양을 의미한다.
+-	그러나 이러한 막대 그래프를 생성하기 위해서는 데이터 선택 외의 단일 과일 범주에 대해서 평균 칼로리 양을 각 각 계산하는 그림과 같은 중간 단계가 필요하다.
+
+-	virtually all graphs require selection many require aggregation or other transformations.
+
+-	the intermediate step(transfomation) ![Image of transform_interme](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/transform_interme.png)
+
+	-	Starting from the original table, first I have to select two columns, but I also have to aggregate these two columns together to generate the information that I need.
+	-	In this case, I need to aggregate all the categories together, and calculate the average across all food products that belong to each of these categories.
+	-	common aggregation functions: SUM, MAX, MIN, AVERAGE, MEDIAN, STDDEV
+
+---
+
+-	실제로 모든 그래프는 selection과 총합 또는 다른 transformation들을 필요로 한다.
+-	그림의 예시처럼 먼저 두 개의 열을 선택하고, 두 개의 열을 aggregation 하여 우리가 필요한 정보를 생성할 필요가 있다.
+-	여기에서는 개별 범주들끼리 분류하고 평균을 구하였다. 일반적으로 aggregation 기능은 합계, 최대값, 최소값, 평균, 중앙값, 표준편차 등이 있다.  
