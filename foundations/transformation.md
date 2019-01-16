@@ -421,7 +421,7 @@ We have two steps of data visualization. Now, we are going back to the first ste
 
 ---
 
-데이터를 시각화 과정은 크게 두 단계로 select and transform와 choose/design representation로 구성되어있다. 여기서는 첫 번째 단계인 `select and transform` 를 자세히 살펴보려고 한다.
+데이터를 시각화 과정은 크게 두 단계 select and transform와 choose/design representation 로 구분된다. 여기서는 첫 번째 단계인 select and transform 을 자세히 살펴보려 한다.
 
 -	`selection: select from the table the attributes needed for the visualization`
 	-	ex1) selecting three attributes and using a scatter plot ![Image of selecting_scatter](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/selecting_scatter.png)
