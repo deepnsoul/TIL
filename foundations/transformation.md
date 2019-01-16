@@ -444,7 +444,7 @@ We have two steps of data visualization. Now, we are going back to the first ste
 -	테이블에서 식품 유형과 칼로리의 양 두 개의 속성을 선택한 후 막대 그래프를 생성할 수 있고, 막대 그래프의 단일 막대는 과일의 범주를 나타나며, 높이는 평균 칼로리 양을 의미한다.
 -	그러나 이러한 막대 그래프를 생성하기 위해서는 데이터 선택 외의 단일 과일 범주에 대해서 평균 칼로리 양을 각 각 계산하는 그림과 같은 중간 단계가 필요하다.
 
--	the intermediate step(transfomation) ![Image of transform_interme](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/transform_interme.png)
+-	`the intermediate step(transfomation)` ![Image of transform_interme](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/transform_interme.png)
 
 -	virtually all graphs require selection many require aggregation or other transformations.
 
