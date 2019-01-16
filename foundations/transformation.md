@@ -429,7 +429,7 @@ We have two steps of data visualization. Now, we are going back to the first ste
 	-	ex1) selecting three attributes and using a scatter plot ![Image of selecting_scatter](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/selecting_scatter.png)
 	-	In the food data set: visualize the relationship between carbohydrates and calories see how it is affected food category.
 	-	We are starting from a large data table with lots of attributes, and selecting three attributes out of them, which are those attributes that we need in order to answer these questions.
-	-	ex2) selectung two attributes and using a bar chart ![Image of selecting_bar](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/selecting_bar.png)  
+	-	ex2) selectung two attributes and using a bar chart ![Image of selecting_bar1](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/selecting_bar1.png)  
 	-	see how the average amount of calories distributes across food category.
 	-	to do that, I have to select the food category and the amount of calories. every single bar represents one fruit category, and the height of the bar represents the average amount of calories.
 	-	ex) an intermediate step ![Image of selecting_interme](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/selecting_interme.png)  
