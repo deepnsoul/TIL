@@ -455,3 +455,31 @@ We have two steps of data visualization. Now, we are going back to the first ste
 -	실제로 모든 그래프는 selection과 총합 또는 다른 transformation들을 필요로 한다.
 -	그림의 예시처럼 먼저 두 개의 열을 선택하고, 두 개의 열을 aggregation 하여 우리가 필요한 정보를 생성할 필요가 있다.
 -	여기에서는 개별 범주들끼리 분류하고 평균을 구하였다. 일반적으로 aggregation 기능은 합계, 최대값, 최소값, 평균, 중앙값, 표준편차 등이 있다.  
+
+### Common / Useful Data Transformations
+
+#### #. day 18, 190118
+
+-	Time and date: a hierarchical structure
+
+	-	Aggregation by: seconds, minutes, hours, day, week, month, year(time resolutions)
+	-	ex) visual presentations at different levels of resolution ![Image of time_resolutions](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/time_resolutions.png)
+	-	using different resolutions has an impact on the way this information is visualized.
+	-	There is never one single resolution that is optimal. It depends on the specific question that you have and on the specific project you’re working on.
+
+-	Spatial
+
+	-	Aggregation by: zip code, county, state
+
+-	Geo coding and decoding
+
+	-	Name -> Geo-coordinates | Geo-coordinates -> Name
+
+---
+
+-	데이터의 유형에 따라 자주 사용되는 aggregations가 있다.
+-	먼저, 시간과 날짜는 위계적인 구조로, 각 각 초, 분, 시 | 날짜, 주, 월, 년 의 시간 해상도를 가진다.
+-	그리고 그림의 예시처럼 어떤 해상도(resolution) 수준을 선택했는지에 따라 시각화 형태가 달라진다.  
+-	최적의 해상도는 존재하지 않으며, 진행하고 있는 프로젝트의 특정 질문에 맞는 해상도 선택해야한다.
+-	공간 데이터는 일반적으로 우편번호, 자치주, 주 의 해상도를 가진다.
+-	지역 데이터의 경우에는 보통 지역의 이름을 위도 경도와 같은 지리적 정보로 코딩하거나, 반대로 디코딩하는 두 가지의 해상도를 가진다.
