@@ -483,3 +483,23 @@ We have two steps of data visualization. Now, we are going back to the first ste
 -	최적의 해상도는 존재하지 않으며, 진행하고 있는 프로젝트의 특정 질문에 맞는 해상도 선택해야한다.
 -	공간 데이터는 일반적으로 우편번호, 자치주, 주 의 해상도를 가진다.
 -	지역 데이터의 경우에는 보통 지역의 이름을 위도 경도와 같은 지리적 정보로 코딩하거나, 반대로 디코딩하는 두 가지의 해상도를 가진다.
+
+#### #. day 19, 190119
+
+-	quantitative to ordinal through binning
+
+	-	ex) ![Image of quan_to_ordi](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/quan_to_ordi.png) -
+
+-	rescaling / re-expression
+
+	-	normalization: ex) [-1,+1]
+	-	percentages ![Image of resc_perc](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/resc_perc.png) -
+	-	distance from reference:ex) average
+
+`Data transformation part of the design process`
+
+Most project require you to think creatively about how transformation may lead to better communication and understanding.
+
+`Role of transformation in visualization`
+
+Visualizing data is not only about how to visualize data but also what information to visualize. It is up to you to produce the right information needed for your problem.
