@@ -488,18 +488,27 @@ We have two steps of data visualization. Now, we are going back to the first ste
 
 -	quantitative to ordinal through binning
 
-	-	ex) ![Image of quan_to_ordi](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/quan_to_ordi.png) -
+	-	binning: you take the quantities, and you bin them into a number of categories, and then you sort them according to their values.
+	-	an example of binning ![Image of quan_to_ordi](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/quan_to_ordi.png)
+	-	I have an attribute that is called profit, the amount of profit that comes from each sale. So there are lots of different values
+	-	But if I want to transform this attribute into a discrete one, into an ordinal one, what I can do is just to aggregate these values into a number of bins.
+	-	Going from one range to another range, and just create one single category for each one.
 
--	rescaling / re-expression
+-	rescaling / re-expression a given quantitative attribute, typically through normalization.
 
-	-	normalization: ex) [-1,+1]
-	-	percentages ![Image of resc_perc](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/resc_perc.png) -
-	-	distance from reference:ex) average
+	-	normalization: if your attribute has a given minimum and maximum value, you can represent the same range using a different scale. ex) [-1,+1]
+	-	percentage case ![Image of resc_perc](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/resc_perc.png)
+	-	on the left is expressing information in terms of counts, and the one on the right is expressing information in terms of percentages.
+	-	this analysis is to see how different cuisine types, how the distribution of grades changes across cuisine types.
+	-	since there are different number of restaurants across cuisine types, if I use only raw numbers, which is on the left chart, I cannot really compare across different cuisines.
+	-	On the right chart, I am re-expressing the same information in terms of percentages, so I no longer have the problem.
+	-	There are many situations where calculating percentages makes comparison between values easier.
+	-	distance from reference:ex) you have all the quantities in an attribute, you calculate the average value and you want to re-express them in terms of distance from the average value.
 
 `Data transformation part of the design process`
 
-Most project require you to think creatively about how transformation may lead to better communication and understanding.
+-	Most project require you to think creatively about how transformation may lead to better communication and understanding.
 
 `Role of transformation in visualization`
 
-Visualizing data is not only about how to visualize data but also what information to visualize. It is up to you to produce the right information needed for your problem.
+-	Visualizing data is not only about how to visualize data but also what information to visualize. It is up to you to produce the right information needed for your problem.
