@@ -143,7 +143,7 @@ It is possible to create different representation of the same data. Being able t
 
 ![Image of bar_alternatives](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/bar_alternatives.png)
 
--	dot plot
+-	*dot plot*
 -	![Image of bar-alt_dotplot](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/bar-alt_dotplot.png)
 
 	-	we can use a simple dot.
@@ -168,7 +168,7 @@ It is possible to create different representation of the same data. Being able t
 -	또한, 선 그래프는 구별되는 패턴을 생성하기 때문에, 패턴을 의미를 부여하게 된다.
 -	그러나 실제로 x축이 범주형 속성이라면, 이러한 패턴은 의미가 없으며, 값에 대한 순서도 없다.
 
--	bubble chart
+-	*bubble chart*
 
 -	![Image of bar-alt_bubbles](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/bar-alt_bubbles.png)
 
@@ -463,7 +463,7 @@ We have two steps of data visualization. Now, we are going back to the first ste
 -	Time and date: a hierarchical structure
 
 	-	Aggregation by: seconds, minutes, hours, day, week, month, year(time resolutions)
-	-	ex) visual presentations at different levels of resolution ![Image of time_resolutions](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/time_resolutions.png)
+	-	*ex) visual presentations at different levels of resolution* ![Image of time_resolutions](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/time_resolutions.png)
 	-	using different resolutions has an impact on the way this information is visualized.
 	-	There is never one single resolution that is optimal. It depends on the specific question that you have and on the specific project you’re working on.
 
@@ -489,7 +489,7 @@ We have two steps of data visualization. Now, we are going back to the first ste
 -	quantitative to ordinal through binning
 
 	-	binning: you take the quantities, and you bin them into a number of categories, and then you sort them according to their values.
-	-	an example of binning ![Image of quan_to_ordi](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/quan_to_ordi.png)
+	-	*an example of binning* ![Image of quan_to_ordi](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/quan_to_ordi.png)
 	-	I have an attribute that is called profit, the amount of profit that comes from each sale. So there are lots of different values
 	-	But if I want to transform this attribute into a discrete one, into an ordinal one, what I can do is just to aggregate these values into a number of bins.
 	-	Going from one range to another range, and just create one single category for each one.
@@ -497,7 +497,7 @@ We have two steps of data visualization. Now, we are going back to the first ste
 -	rescaling / re-expression a given quantitative attribute, typically through normalization.
 
 	-	normalization: if your attribute has a given minimum and maximum value, you can represent the same range using a different scale. ex) [-1,+1]
-	-	percentage case ![Image of resc_perc](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/resc_perc.png)
+	-	*percentage case* ![Image of resc_perc](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/resc_perc.png)
 	-	on the left is expressing information in terms of counts, and the one on the right is expressing information in terms of percentages.
 	-	this analysis is to see how different cuisine types, how the distribution of grades changes across cuisine types.
 	-	since there are different number of restaurants across cuisine types, if I use only raw numbers, which is on the left chart, I cannot really compare across different cuisines.
