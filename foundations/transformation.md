@@ -305,7 +305,7 @@ In the vehicle collision data, we have vehicle type, main cause for the accident
 
 ---
 
--그림의 예시는 차랑 충돌 데이터에서, 차량 유형과 사고의 주요 원인, 이 두 범주의 조합에 대해서 얼마나 많은 사고가 발생했는지를 막대 그래프의 두 가지 디자인으로 나타낸 것이다.
+-	그림의 예시는 차랑 충돌 데이터에서, 차량 유형과 사고의 주요 원인, 이 두 범주의 조합에 대해서 얼마나 많은 사고가 발생했는지를 막대 그래프의 두 가지 디자인으로 나타낸 것이다.
 
 -	stacked
 
@@ -494,6 +494,12 @@ We have two steps of data visualization. Now, we are going back to the first ste
 	-	But if I want to transform this attribute into a discrete one, into an ordinal one, what I can do is just to aggregate these values into a number of bins.
 	-	Going from one range to another range, and just create one single category for each one.
 
+---
+
+-	양적 자료를 순서 자료로 바꿀 수 있는데, 범주를 임의적으로 만들어서 값에 따라 분류하는 binning을 통하여 데이터 변환을 할 수 있다.
+-	그림의 그래프는 각 각의 판매에서 오는 수익을 표현하고 있으며, 만약 개별 판매의 값을 하나씩 다루면 엄청나게 다양한 값이 x축에 나타나게 된다.  
+-	따라서 개별 판매라는 다양한 값을 몇 개의 범주로 분류하여 나타내었다. 즉, 특정 범위의 값을 하나의 범주에 포함시켜 양적 자료를 이산적인 순서 자료로 변환하였다.
+
 -	rescaling / re-expression a given quantitative attribute, typically through normalization.
 
 	-	normalization: if your attribute has a given minimum and maximum value, you can represent the same range using a different scale. ex) [-1,+1]
@@ -505,6 +511,15 @@ We have two steps of data visualization. Now, we are going back to the first ste
 	-	There are many situations where calculating percentages makes comparison between values easier.
 	-	distance from reference:ex) you have all the quantities in an attribute, you calculate the average value and you want to re-express them in terms of distance from the average value.
 
+---
+
+-	양적 속성의 데이터를 재배정 또는 재표현하기도 하는데, 이는 정규화를 통해 데이터 변환이 가능하다.
+-	정규화는 속성이 최대값, 최소값을 가질 때, 다른 기준(척도)을 이용하여 같은 범위를 나타내는 방법이다. 예를 들어 범위가 넓게 퍼져있는 음수, 양수 값을 [-1,+1] 기준으로 재배정 할 수 있다.  
+-	그림의 그래프는 다양한 요리 종류에 따라 평가가 어떻게 변하는지를 나타내고 있는데, 왼쪽의 y축은 빈도수를 오른쪽은 백분률로 표현하고 있다.
+-	문제는 식당에 따라 요리 종류를 나타내고 있기 때문에, 왼쪽과 같이 평가 점수로 표현하면 식당 별로 비교하기가 쉽지 않다.
+-	따라서 오른쪽과 같이 정보를 백분율로 재표현하여 문제를 해결할 수 있는데, 이와 같이 비율을 계산하면 값을 쉽게 비교할 수 있는 경우가 많이 있다.  
+-	또다른 재표현 방식은 특정 값에 대해 거리를 이용하는 것인데, 예를 들어 속성이 모든 값을 가지고 있으면 평균값을 계산하고 평균값과의 거리를 기준으로 다시 표현할 수 있다.
+
 `Data transformation part of the design process`
 
 -	Most project require you to think creatively about how transformation may lead to better communication and understanding.
@@ -512,3 +527,9 @@ We have two steps of data visualization. Now, we are going back to the first ste
 `Role of transformation in visualization`
 
 -	Visualizing data is not only about how to visualize data but also what information to visualize. It is up to you to produce the right information needed for your problem.
+
+---
+
+-	정리하자면, 데이터 변환도 디자인 프로세트의 한 부분이라고 볼 수 있다.
+-	대부분의 프로젝트에서 더 나은 커뮤니케이션과 이해를 가능하게 하는 창의적인 데이터 변환을 요구한다.
+-	데이터 시각화는 단지 어떻게 데이터를 시각화할지에 대한 것만이 아니라, 어떤 정보를 시각화할지를 고민해야되며, 문제를 해결하기 위해 필요한 올바른 정보를 만들어내는 역량이 중요하다.
