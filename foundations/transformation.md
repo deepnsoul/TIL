@@ -6,8 +6,6 @@ coursera **[Information Visualization: Foundations](https://www.coursera.org/lea
 How to Visualize?
 -----------------
 
-#### #. day 08, 190108
-
 > How do I visualize this? How do I go from data to a visual representation that helps you answer some important questions that you have about the data? we can break the problem down into two steps.
 
 1.	`Decide what to visualize`
@@ -33,8 +31,6 @@ How to Visualize?
 -	디자인은 기존의 포맷이 아닌 현 문제에 대한 새로운 시각적 표현을 만드는 것을 말한다.
 
 ### Fundamental Graphs
-
-#### #. day 11, 190111
 
 -	what graphs are available to visualize the combination of attributes that you have.
 -	There are the bar chart, the scatter plot, the matrix, the line chart and the symbol map.
