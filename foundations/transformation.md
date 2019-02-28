@@ -127,8 +127,6 @@ This is a summary of the graphs that I have just shown you and what kind of info
 
 ### Alternate Representations
 
-#### #. day 12, 190112
-
 It is possible to create different representation of the same data. Being able to think about alternative visual representations for the same information is one of the most important skills because it is useful once you have a number of alternatives in mind to be able to reason about which one is the most appropriate for your goal.
 
 ---
@@ -285,8 +283,6 @@ It is possible to create different representation of the same data. Being able t
 
 ### Going Beyond Two Attributes
 
-#### #. day 13, 190113
-
 If you have additional attributes and you want to be able to introduce in the representation, there are several designs which is belonging to each charts.
 
 ---
@@ -354,8 +350,6 @@ In the vehicle collision data, we have on the x-axis, time, year of the date, an
 -	마지막으로 누적 영역 그래프는 개별 범주의 값을 누적하여 위로 쌓아 나타내는 방식이다. 이러한 그래프는 값의 비율이 시간에 따라 어떻게 변하는지 알아보고자 할 때만 유용하다.
 -	다만, 시간 변화에 따른 범주 사이의 값을 비교하는 경우에는 모든 선의 형태가 바로 아래에 있는 선의 형태에 영향을 받기 때문에 이 방식이 효과적이지 않다.
 
-#### #. day 14, 190114
-
 `Scatter plots`
 
 ![Image of scatter_3attri](https://github.com/deepnsoul/TIL/blob/master/foundations/fig/scatter_3attri.png)
@@ -411,8 +405,6 @@ This is a very general purpose technique, that is called faceting, and visualiza
 
 ### Data Transformation
 
-#### #. day 16, 190116
-
 We have two steps of data visualization. Now, we are going back to the first step, in trying to look into more details what this means.
 
 ---
@@ -454,8 +446,6 @@ We have two steps of data visualization. Now, we are going back to the first ste
 
 ### Common / Useful Data Transformations
 
-#### #. day 18, 190118
-
 -	Time and date: a hierarchical structure
 
 	-	Aggregation by: seconds, minutes, hours, day, week, month, year(time resolutions)
@@ -480,7 +470,7 @@ We have two steps of data visualization. Now, we are going back to the first ste
 -	공간 데이터는 일반적으로 우편번호, 자치주, 주 의 해상도를 가진다.
 -	지역 데이터의 경우에는 보통 지역의 이름을 위도 경도와 같은 지리적 정보로 코딩하거나, 반대로 디코딩하는 두 가지의 해상도를 가진다.
 
-#### #. day 19, 190119
+---
 
 -	quantitative to ordinal through binning
 
